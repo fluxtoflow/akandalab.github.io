@@ -14,22 +14,17 @@
       height:10%;
     }
 
+
     .container {
       position: relative;
-      overflow: hidden;
-      width: 100%;
-      padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+      width: 100%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
     }
 
 /* Then style the iframe to fit in the container div with full height and width */
     .responsive-iframe {
       border:none;
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      width: 100%;
+      position: relative;
+      width: 60%;
       height: 300%;
     }
 
@@ -57,7 +52,7 @@
   display: block;
 }
   </style>
-<body>
+<body><center>
     AKANDA LAB<br>
     <i>the University of Rhode Island</i><br>
     <b>Department of Civil & Environmental Engineering<br>
@@ -78,10 +73,11 @@
     </div> |
 
     <a href = 'publications.html' target='iframe1'>Publications</a> |
-    <a href = 'links.html' target='iframe1'>Links</a>
+    <a href = 'links.html' target='iframe1'>Links</a><br><br>
     <div class="container">
-      <iframe name="iframe1" class="responsive-iframe" src="home.html"></iframe>
+      <iframe name="iframe1" class="responsive-iframe" src="home.html" align='center'></iframe>
     </div>
+  </center>
 </body>
 </head>
 </html>

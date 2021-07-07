@@ -55,6 +55,17 @@
 
   .climate {
     background-color: #008CBA;
+    color:white;
+  }
+
+  .water {
+    background-color: yellow;
+    color: black;
+  }
+
+  .globalhealth {
+    background-color: orange;
+    color:white;
   }
 
   .container:hover .overlay {
@@ -62,7 +73,6 @@
   }
 
   .text {
-    color: white;
     font-size: 20px;
     position: absolute;
     top: 50%;
@@ -88,8 +98,8 @@
 
   <div id ='water' class="container">
     <img class = 'cropped' src="mounts_river.jpg" alt="Avatar" class="image">
-    <div class="overlay">
-      <div class="text">Water</div>
+    <div class="overlay water">
+      <div class="text water">Water</div>
     </div>
   </div>
 
@@ -102,7 +112,7 @@
 
   <div id = 'health' class="container">
     <img class = 'cropped' src="girl.png" alt="Avatar" class="image">
-    <div class="overlay climate">
+    <div class="overlay globalhealth">
       <div class="text">Global Health</div>
     </div>
   </div>

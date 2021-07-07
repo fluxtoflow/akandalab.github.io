@@ -1,1 +1,68 @@
-pictures of rs, global health, and water
+<html>
+<head>
+  <style>
+  .container {
+    position: relative;
+    width: 200px;
+  }
+
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 1s ease;
+    background-color: black;
+  }
+
+  .container:hover .overlay {
+    opacity: .75;
+  }
+
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .cropped {
+      width: 200px; /* width of container */
+      height: 200px; /* height of container */
+      object-fit: cover;
+  }
+  .cropped img {
+    margin: 0px 0px 0px 0px;
+}
+  </style>
+
+</head>
+<body>
+  <div class="container">
+    <img class = 'cropped' src="BoB.jpg" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">Water</div>
+    </div>
+  </div>
+  <div class="container">
+    <img class = 'cropped' src="mounts_river.jpg" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">Water</div>
+    </div>
+  </div>
+  </body>
+</html>

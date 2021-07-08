@@ -102,7 +102,14 @@ float:right;
 padding: 0 10px 0 0
 }
   </style>
+  <script>
+      //By adding the following js to index.html, the iframe is replaced with the
+      //snippet from vanilla.html and the css of index.html is applied.
+      $('body').iframe_to_div();
 
+      //Or you can target a specific iframe directly
+      //$('#iframeid).iframe_to_div();
+  </script>
 </head>
 <body>
 

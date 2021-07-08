@@ -1,15 +1,5 @@
 <html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script>
-$( function() {
-  $( "#tabs" ).tabs();
-} );
-</script>
-
   <style>
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100;300&family=Libre+Caslon+Display&display=swap');
   body {
@@ -146,37 +136,6 @@ $( function() {
   .cropped img {
     margin: 0px 0px 0px 0px;
 }
-
-ul {
-  list-style-type:none;
-}
-
-li {
-  display: inline;
-}
-#tabs-1 {
-  width:915;
-  text-align: left;
-}
-
-#tabs-2 {
-  width:915;
-  text-align: left;
-}
-
-#tabs-3 {
-  width:915;
-  text-align: left;
-}
-.headalbert {
-float:right;
-padding: 0 10px 0 0
-}
-
-.headfarah {
-float:left;
-padding: 0 10px 0 0
-}
   </style>
 
 
@@ -185,48 +144,52 @@ padding: 0 10px 0 0
     <font style="font-family: Libre Caslon Display" size='10'>AKANDA LAB </font>
     <font style="font-family: Libre Caslon Display" size='6'>@</font>
     <font style="font-family: Libre Caslon Display" size='5'>the University of Rhode Island</font><br>
-    <font size='5'>Department of Civil & Environmental Engineering</font>
-      <div id="tabs">
-        <ul>
-          <li><a href="#tabs-1">Home</a></li> /
-          <li><a href="#tabs-2">Our Group</a></li> /
-          <li><a href="#tabs-3">Publications</a></li>
-        </ul>
-          <div id = 'wrapper'>
-          <div id ='water' class="container2">
-            <img class = 'cropped' src="mounts_river.jpg" alt="Avatar" class="image">
-            <div class="overlay water">
-              <div class="text water">Water</div>
-            </div>
-          </div>
-        &nbsp;
-          <div id = 'climate' class="container2">
-            <img class = 'cropped' src="BoB.jpg" alt="Avatar" class="image">
-            <div class="overlay climate">
-              <div class="text">Climate</div>
-            </div>
-          </div>
-        &nbsp;
-          <div id = 'health' class="container2">
-            <img class = 'cropped' src="girl.png" alt="Avatar" class="image">
-            <div class="overlay globalhealth">
-              <div class="text">Global Health</div>
-            </div>
-          </div>
-        </div>
+    <font size='5'>Department of Civil & Environmental Engineering<br>
+    <a href = 'home.html' target='iframe1'>Home</a> /
 
+    <div class="dropdown">
+      <span>Our Group</span>
+      <div class="dropdown-content">
+        <p><a href='ali.html' target='iframe1'>Ali</a></p>
+        <p><a href='albert.html' target='iframe1'>Albert</a></p>
+        <p><a href='cameron.html' target='iframe1'>Cameron</a></p>
+        <p><a href='darya.html' target='iframe1'>Darya</a></p>
+        <p><a href='farah.html' target='iframe1'>Farah</a></p>
+        <p><a href='hanan.html' target='iframe1'>Hanan</a></p>
+        <p><a href='mohammed.html' target='iframe1'>Mohammed</a></p>
 
-
-        <div id="tabs-1">
-          <p>In the news!</p>
-        </div>
-        <div id="tabs-2">
-            <p>These are our people.</p>
-        </div>
-        <div id="tabs-3">
-          <p>These are our publications.</p>
-        </div>
       </div>
+    </div> /
+
+    <a href = 'publications.html' target='iframe1'>Publications</a> /
+    <a href = 'links.html' target='iframe1'>Links</a><br><br>
+    <div id = 'wrapper'>
+    <div id ='water' class="container2">
+      <img class = 'cropped' src="mounts_river.jpg" alt="Avatar" class="image">
+      <div class="overlay water">
+        <div class="text water">Water</div>
+      </div>
+    </div>
+  &nbsp;
+    <div id = 'climate' class="container2">
+      <img class = 'cropped' src="BoB.jpg" alt="Avatar" class="image">
+      <div class="overlay climate">
+        <div class="text">Climate</div>
+      </div>
+    </div>
+  &nbsp;
+    <div id = 'health' class="container2">
+      <img class = 'cropped' src="girl.png" alt="Avatar" class="image">
+      <div class="overlay globalhealth">
+        <div class="text">Global Health</div>
+      </div>
+    </div>
+  </div>
+
+    <div class="container3">
+      <iframe name="iframe1" class='responsive-iframe' src="home.html" align='center'></iframe>
+    </div>
+  </center>
 </body>
 </head>
 </html>

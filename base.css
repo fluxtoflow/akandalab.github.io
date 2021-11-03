@@ -11,23 +11,8 @@
   }
 }
 
-.carousel-control-next{
-  filter: invert(100%);
-  right:20%;
-}
-.carousel-control-prev /*, .carousel-indicators */ {
-    filter: invert(100%);
-    left: unset;
-    left:20%;
-    /* right: 10px; */
-}
 .cropped {
     width: 300px; /* width of container */
     height: 300px; /* height of container */
     object-fit: cover;
-}
-
-.carousel-control {
-    width: 30%;/*put your desired width*/
-    margin-top: 150px;/*put your desired top margin*/
 }

@@ -23,40 +23,36 @@
   html {
   overflow-y: scroll;
   }
+
   body {
     font-family: 'Encode Sans', serif;
   }
+
   a {
     color: lightskyblue;
     text-decoration: none;
     font-family: 'Encode Sans', sans-serif;
     font-size: 16px;
   }
-  img {
-    height:10%;
+
+
+
+    #wrapper {
+    display: flex;
+    justify-content: center;
   }
 
-    .container3 {
-      position: relative;
- /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-    }
+    #water {
+    flex: 0 0 300px;
+  }
 
-  #wrapper {
-  display: flex;
-  justify-content: center;
-}
+    #climate {
+    flex: 0 0 300px;
+  }
 
-  #water {
-  flex: 0 0 300px;
-}
-
-  #climate {
-  flex: 0 0 300px;
-}
-
-  #health {
-  flex: 0 0 300px;
-}
+    #health {
+    flex: 0 0 300px;
+  }
 
   .container2 {
     position: relative;
@@ -105,6 +101,10 @@
     opacity: .90;
   }
 
+  .container3:hover .overlay {
+    opacity: .90;
+  }
+
   .text {
     font-family: 'Encode Sans', sans-serif;
     font-size: 20px;
@@ -120,78 +120,94 @@
       width: 300px; /* width of container */
       height: 300px; /* height of container */
       object-fit: cover;
+      object-position: top;
   }
   .cropped img {
     margin: 0px 0px 0px 0px;
-}
+  }
 
-ul {
-  list-style-type:none;
-  padding: 0;
-  max-width: 915;
-  display: block;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  margin-left: 0;
-  margin-right: 0;
-  text-align:left;
-}
+  .cropped2 {
+      width: 100vw; /* width of container */
+      height: 300px; /* height of container */
+      object-fit: cover;
+      object-position: top;
+  }
+  .cropped2 img {
+    margin: 0px 0px 0px 0px;
+  }
 
-li {
-  display: inline;
-  max-width: 915;
-}
-#tabs-1 {
-  max-width:915;
-  text-align: left;
-}
+  ul {
+    list-style-type:none;
+    padding: 0;
+    max-width: 915;
+    display: block;
+    margin-top: 0.1em;
+    margin-bottom: 0.5em;
+    margin-left: 0;
+    margin-right: 0;
+    text-align:left;
+  }
 
-#tabs-2 {
-  max-width:915;
-  text-align: left;
-}
+  li {
+    display: inline;
+    max-width: 915;
+  }
+  #tabs-1 {
+    max-width:915;
+    text-align: left;
+  }
 
-#tabs-3 {
-  max-width:915;
-  text-align: left;
-}
+  #tabs-2 {
+    max-width:915;
+    text-align: left;
+  }
 
-h1 {
- display: block;
- font-size:calc(12px + 8vw);
- margin-top: 0.1em;
- margin-bottom: 0em;
- margin-left: 0;
- margin-right: 0;
- max-width: 915;
- text-align:left;
- /* font-weight: bold; */
-}
+  #tabs-3 {
+    max-width:915;
+    text-align: left;
+  }
 
-h2 {
- display: block;
- font-size:calc(12px + 4vw);
- margin-top: -0.5em;
- margin-bottom: 0em;
- margin-left: 0;
- margin-right: 0;
- max-width: 915;
- text-align:left;
- /* font-weight: bold; */
-}
+  h1 {
+   display: block;
+   font-size:calc(30px + 7.5vw);
+   margin-top: 0.1em;
+   margin-bottom: 0em;
+   margin-left: 0;
+   margin-right: 0;
+   max-width: 915;
+   text-align:left;
+   /* font-weight: bold; */
+  }
 
-h3 {
- display: block;
- font-size:calc(12px + 1vw);
- margin-top: -0.2em;
- margin-bottom: 0em;
- margin-left: 0;
- margin-right: 0;
- max-width: 915;
- text-align:left;
- /* font-weight: bold; */
-}
+  h2 {
+   display: block;
+   font-size:calc(16px + 4vw);
+   margin-top: -0.5em;
+   margin-bottom: 0em;
+   margin-left: 0;
+   margin-right: 0;
+   max-width: 915;
+   text-align:left;
+   /* font-weight: bold; */
+  }
 
+  h3 {
+   display: block;
+   font-size:calc(12px + 1vw);
+   margin-top: -0.2em;
+   margin-bottom: 0em;
+   margin-left: 0;
+   margin-right: 0;
+   max-width: 915;
+   text-align:left;
+   /* font-weight: bold; */
+  }
+
+  .container3 {
+    position: relative;
+    text-align:center;
+    width: 100vw;
+  }
 
 
   </style>
@@ -241,8 +257,8 @@ h3 {
           <div class="carousel-inner">
 
             <div class="carousel-item active">
-              <div id ='water' class="container2">
-                <img class = 'cropped' src="mounts_river.jpg" alt="Avatar" class="image">
+              <div id ='water' class="container3">
+                <img class = 'cropped2' src="mounts_river.jpg" alt="Avatar" class="image">
                 <div class="overlay water">
                   <div class="text water">Water</div>
                 </div>
@@ -250,8 +266,8 @@ h3 {
             </div>
 
             <div class="carousel-item">
-              <div id = 'climate' class="container2">
-                <img class = 'cropped' src="BoB.jpg" alt="Avatar" class="image">
+              <div id = 'climate' class="container3">
+                <img class = 'cropped2' src="BoB.jpg" alt="Avatar" class="image">
                 <div class="overlay climate">
                   <div class="text">Climate</div>
                 </div>
@@ -259,9 +275,9 @@ h3 {
             </div>
 
             <div class="carousel-item">
-              <div id = 'health' class="container2">
+              <div id = 'health' class="container3">
                 <a href='https://choleramap.web.app/' target="_blank">
-                  <img class = 'cropped' src="girl.png" alt="" class="image">
+                  <img class = 'cropped2' src="girl.png" alt="" class="image">
                 <div class="overlay globalhealth">
                   <div class="text">Global Health</div>
                 </div>

@@ -4,6 +4,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="base.css">
+
+<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 <script>
 
 $( function() {
@@ -11,7 +18,10 @@ $( function() {
 } );
 </script>
 
-  <style>
+
+<style>
+
+
 
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100;300&family=Libre+Caslon+Display&display=swap');
   html {
@@ -35,13 +45,6 @@ $( function() {
  /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
     }
 
-/* Then style the iframe to fit in the container div with full height and width */
-    .responsive-iframe {
-      border:none;
-      position: relative;
-      width: 915px;
-      height: 300%;
-    }
 
     .dropdown {
   position: relative;
@@ -88,7 +91,7 @@ $( function() {
   .container2 {
     position: relative;
     text-align:center;
-    width: 200px;
+    width: 300px;
   }
 
   .image {
@@ -197,6 +200,8 @@ padding: 0 10px 0 0
           <li><a href="#tabs-2">Our Group</a></li> /
           <li><a href="#tabs-3">Publications</a></li>
         </ul>
+
+      <div class="containerDesktop">
           <div id = 'wrapper'>
           <div id ='water' class="container2">
             <img class = 'cropped' src="mounts_river.jpg" alt="Avatar" class="image">
@@ -219,6 +224,43 @@ padding: 0 10px 0 0
             </div>
           </div>
         </div>
+
+        </div>
+
+      <div class="containerMobile" align="center">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <div id ='water' class="container2">
+                <img class = 'cropped' src="mounts_river.jpg" alt="Avatar" class="image">
+                <div class="overlay water">
+                  <div class="text water">Water</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div id = 'climate' class="container2">
+                <img class = 'cropped' src="BoB.jpg" alt="Avatar" class="image">
+                <div class="overlay climate">
+                  <div class="text">Climate</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div id = 'health' class="container2">
+                <img class = 'cropped' src="girl.png" alt="Avatar" class="image">
+                <div class="overlay globalhealth">
+                  <div class="text">Global Health</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
 
 
 

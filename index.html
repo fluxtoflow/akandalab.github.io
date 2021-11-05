@@ -28,14 +28,20 @@
     font-family: 'Encode Sans', serif;
   }
 
+  img {
+    max-width:100%;
+    height:auto;
+  }
+
   a {
     color: lightskyblue;
     text-decoration: none;
     font-family: 'Encode Sans', sans-serif;
     font-size: 16px;
   }
-
-
+  a:hover{
+    text-decoration: none;
+  }
 
     #wrapper {
     display: flex;
@@ -107,7 +113,7 @@
 
   .text {
     font-family: 'Encode Sans', sans-serif;
-    font-size: 20px;
+    font-size: 24px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -136,6 +142,7 @@
     margin: 0px 0px 0px 0px;
   }
 
+
   ul {
     list-style-type:none;
     padding: 0;
@@ -151,6 +158,7 @@
   li {
     display: inline;
     max-width: 915;
+    font-size:26px;
   }
   #tabs-1 {
     max-width:915;
@@ -209,6 +217,30 @@
     width: 100vw;
   }
 
+  a.linxclimate {
+    color: white;
+    text-decoration: none;
+    font-family: 'Encode Sans', sans-serif;
+    font-size: 20px;
+  }
+  a.linxwater {
+
+    color: black;
+    text-decoration: none;
+    font-family: 'Encode Sans', sans-serif;
+    font-size: 20px;
+  }
+
+  a.linxglobalhealth {
+
+    color:white;
+    text-decoration: none;
+    font-family: 'Encode Sans', sans-serif;
+    font-size: 20px;
+  }
+  a.nav{
+    font-size: 20px;
+  }
 
   </style>
 
@@ -220,9 +252,9 @@
     <h3>Department of Civil & Environmental Engineering</font></h3>
       <div id="tabs">
         <ul>
-          <li><a href="#tabs-1">Home</a></li> /
-          <li><a href="#tabs-2">Research Group</a></li> /
-          <li><a href="#tabs-3">Publications</a></li>
+          <li><a style='font-size:24px' href="#tabs-1">Home </a>/</li>
+          <li><a style='font-size:24px' href="#tabs-2">Research Group </a>/</li>
+          <li><a style='font-size:24px;' href="#tabs-3">Publications </a></li>
         </ul>
 
       <div class="containerDesktop">
@@ -230,14 +262,14 @@
           <div id ='water' class="container2">
             <img class = 'cropped' src="mounts_river.jpg" alt="Avatar" class="image">
             <div class="overlay water">
-              <div class="text water">Water</div>
+              <div class="text water"><a class='linxwater' href='https://web.uri.edu/engineering/research/water/' target='_blank'>Water</a></div>
             </div>
           </div>
         &nbsp;
           <div id = 'climate' class="container2">
             <img class = 'cropped' src="BoB.jpg" alt="Avatar" class="image">
             <div class="overlay climate">
-              <div class="text">Climate</div>
+              <div class="text"><a class='linxclimate' href='https://waterdiplomacy.org/reqsim/' target='_blank'>Climate</a></div>
             </div>
           </div>
         &nbsp;
@@ -245,9 +277,9 @@
             <a href="https://choleramap.web.app/" target="_blank">
               <img class = 'cropped' src="girl.png" alt="" class="image">
             <div class="overlay globalhealth">
-              <div class="text">Global Health</div>
+              <div class="text"><a class='linxglobalhealth' href='https://choleramap.web.app/' target="_blank">Global Health</a></div>
             </div>
-          </div></a>
+          </div>
         </div>
 
         </div>
@@ -260,28 +292,28 @@
               <div id ='water' class="container3">
                 <img class = 'cropped2' src="mounts_river.jpg" alt="Avatar" class="image">
                 <div class="overlay water">
-                  <div class="text water">Water</div>
+                  <div class="text water"><a class='linxwater' href='https://web.uri.edu/engineering/research/water/' target='_blank'>Water</a></div>
                 </div>
               </div>
             </div>
 
-            <div class="carousel-item">
+            <div class= "carousel-item">
               <div id = 'climate' class="container3">
                 <img class = 'cropped2' src="BoB.jpg" alt="Avatar" class="image">
                 <div class="overlay climate">
-                  <div class="text">Climate</div>
+                  <div class="text"><a class='linxclimate' href='https://waterdiplomacy.org/reqsim/' target='_blank'>Climate</a></div>
                 </div>
               </div>
             </div>
 
             <div class="carousel-item">
               <div id = 'health' class="container3">
-                <a href='https://choleramap.web.app/' target="_blank">
+
                   <img class = 'cropped2' src="girl.png" alt="" class="image">
                 <div class="overlay globalhealth">
-                  <div class="text">Global Health</div>
+                  <div class="text water"><a class='linxglobalhealth' href='https://choleramap.web.app/' target="_blank">Global Health</a></div>
                 </div>
-              </div></a>
+              </div>
             </div>
           </div>
         </div>
@@ -293,7 +325,34 @@
           <p><br><a class="twitter-timeline" href="https://twitter.com/asakanda?ref_src=twsrc%5Etfw">Tweets by asakanda</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> </p>
         </div>
         <div id="tabs-2">
-            <p><br>Farah<br>Hanan<br>Albe<br>Mohammed<br>Cameron<br>Darya<br>Wulan</p>
+          <br>
+
+
+
+              <b><u>Current Students</b></u><br>
+
+              Farah Nusrat, PhD <br>
+              Hanan Bankhah, PhD <br>
+              Albe Larson, PhD <br>
+              Mohammed Alotaibi, PhD <br>
+              Wulan Retno Septiani, PhD <br>
+              Cameron Murray, MS <br>
+              Darya Shahidi, MS <br><br>
+
+
+              <b><u>Alumni</b></u><br>
+              Lukas Siemon, MS 2020, currently at Technische Universität Braunschweig, <a href='https://doi.org/10.23860/thesis-Siemon-Lukas-2020', style='font-weight: bold; font-size:16' target="_blank">thesis</a><br>
+              Othman Fallatah, PhD 2018, currently at King Abduaziz University, <a href='https://doi.org/10.23860/diss-fallatah-othman-2018', style='font-weight: bold; font-size:16' target="_blank">thesis</a><br>
+              Mohammed Alfi Hasan 2018, PhD, currently at Monsanto, <a href='https://doi.org/10.23860/diss-hasan-mohammad-2018', style='font-weight: bold; font-size:16' target="_blank">thesis</a><br>
+              Fabian Wagner, MS 2017, currently at Hochschule Furtwangen University, <a href='https://doi.org/10.23860/thesis-wagner-fabian-2017', style='font-weight: bold; font-size:16' target="_blank">thesis</a><br>
+              Emily Serman, MS 2017, currently at USC, <a href='https://doi.org/10.23860/thesis-serman-emily-2017', style='font-weight: bold; font-size:16' target="_blank">thesis</a><br>
+
+              <br><b><u>Group Photo, September 2021</u></b><br>
+              Front Row (from left): Albe, Mohammed<br>
+              Back Row (from left): Wulan, Darya, Ali, Cameron, Farah, Hanan
+              <br><div class='img'><img src='akanda_group_sep_2021.jpg'></div>
+
+
         </div>
         <div id="tabs-3">
 
@@ -314,13 +373,13 @@ Biometeorology, Under Review.</p>
 
 <b><u>Published</b></u><br>
 
-<br><b>2021</b><br>
+<br><b>2020 - 2021</b><br>
+
 <p>Aziz, S., Pakhtigian, E.L., Akanda, A.S., Jutla, A., Huq, A., Alam, M., Ashan, G.U. and Colwell,
 R.R., 2021. Does improved risk information increase the value of cholera prevention? An
 analysis of stated vaccine demand in slum areas of urban Bangladesh. Social Science &
 Medicine, 272, p.113716. <a href='https://doi.org/10.1016/j.socscimed.2021.113716' target="_blank">https://doi.org/10.1016/j.socscimed.2021.113716></a></p>
 
-<br><b>2020</b><br>
 <p>Akanda A.S., Johnson K., Ginsberg H., 2020. Prioritizing Water Security in the Management
 of Vector Borne Diseases: Lessons from Oaxaca Mexico. Geohealth,
 <a href='https://doi.org/10.1029/2019GH000201' target="_blank">https://doi.org/10.1029/2019GH000201</a></p>

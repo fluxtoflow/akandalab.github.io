@@ -85,13 +85,13 @@
   }
 
   .climate {
-    background-color: #008CBA;
+    /* background-color: #008CBA; */
     color:white;
     font-family: 'Encode Sans', sans-serif;
   }
 
   .water {
-    background-color: yellow;
+    /* background-color: yellow; */
     color: black;
     font-family: 'Encode Sans', sans-serif;
   }
@@ -114,6 +114,17 @@
     font-family: 'Encode Sans', sans-serif;
     font-size: 24px;
     position: absolute;
+    top: 100%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .text1 {
+    font-family: 'Encode Sans', sans-serif;
+    font-size: 24px;
+    position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -121,6 +132,8 @@
     transform: translate(-50%, -50%);
     text-align: center;
   }
+
+
   .cropped {
       width: 300px; /* width of container */
       height: 300px; /* height of container */
@@ -230,8 +243,8 @@
     box-sizing: border-box;
   }
   a.linxclimate:hover {
-    background-color:gray;
-    border-color:gray;
+    background-color:#2b7ab9;
+    border-color:#2b7ab9;
   }
 
 
@@ -250,8 +263,8 @@
     box-sizing: border-box;
   }
   a.linxwater:hover {
-    background-color:gray;
-    border-color:gray;
+    background-color:#2b7ab9;
+    border-color:#2b7ab9;
   }
 
   a.linxglobalhealth {
@@ -269,8 +282,8 @@
     box-sizing: border-box;
   }
   a.linxglobalhealth:hover {
-    background-color:gray;
-    border-color:gray;
+    background-color:#2b7ab9;
+    border-color:#2b7ab9;
   }
 
   </style>
@@ -293,24 +306,24 @@
           <div id = 'wrapper'>
           <div id ='water' class="container2">
             <img class = 'cropped' src="mounts_river.jpg" alt="Avatar" class="image">
-            <div class="overlay water">
+            <!-- <div class="overlay water"> -->
               <div class="text water"><a class='linxwater' href='https://web.uri.edu/engineering/research/water/' target='_blank'>Water Security</a></div>
-            </div>
+            <!-- </div> -->
           </div>
         &nbsp;
           <div id = 'climate' class="container2">
             <img class = 'cropped' src="BoB.jpg" alt="Avatar" class="image">
-            <div class="overlay climate">
+            <!-- <div class="overlay climate"> -->
               <div class="text"><a class='linxclimate' href='https://waterdiplomacy.org/reqsim/' target='_blank'>Climate Change</a></div>
-            </div>
+            <!-- </div> -->
           </div>
         &nbsp;
           <div id = 'health' class="container2">
             <a href="https://choleramap.web.app/" target="_blank">
               <img class = 'cropped' src="girl.png" alt="" class="image">
-            <div class="overlay globalhealth">
+            <!-- <div class="overlay globalhealth"> -->
               <div class="text"><a class='linxglobalhealth' href='https://choleramap.web.app/' target="_blank">Global Health</a></div>
-            </div>
+            <!-- </div> -->
           </div>
         </div>
 
@@ -323,18 +336,19 @@
             <div class="carousel-item active">
               <div id ='water' class="container3">
                 <img class = 'cropped2' src="mounts_river.jpg" alt="Avatar" class="image">
-                <div class="overlay water">
-                  <div class="text water"><a class='linxwater' href='https://web.uri.edu/engineering/research/water/' target='_blank'>Water</a></div>
-                </div>
-              </div>
+              </div><br>
+                <!-- <div class="overlay water"> -->
+                  <div class="text1 water"><a class='linxwater' href='https://web.uri.edu/engineering/research/water/' target='_blank'>Water</a></div>
+                <!-- </div> -->
+
             </div>
 
             <div class= "carousel-item">
               <div id = 'climate' class="container3">
                 <img class = 'cropped2' src="BoB.jpg" alt="Avatar" class="image">
-                <div class="overlay climate">
-                  <div class="text"><a class='linxclimate' href='https://waterdiplomacy.org/reqsim/' target='_blank'>Climate</a></div>
-                </div>
+                <!-- <div class="overlay climate"> -->
+                  <div class="text1 water"><a class='linxclimate' href='https://waterdiplomacy.org/reqsim/' target='_blank'>Climate</a></div>
+                <!-- </div> -->
               </div>
             </div>
 
@@ -342,9 +356,9 @@
               <div id = 'health' class="container3">
 
                   <img class = 'cropped2' src="girl.png" alt="" class="image">
-                <div class="overlay globalhealth">
-                  <div class="text water"><a class='linxglobalhealth' href='https://choleramap.web.app/' target="_blank">Global Health</a></div>
-                </div>
+                <!-- <div class="overlay globalhealth"> -->
+                  <div class="text1 water"><a class='linxglobalhealth' href='https://choleramap.web.app/' target="_blank">Global Health</a></div>
+                <!-- </div> -->
               </div>
             </div>
           </div>
@@ -416,7 +430,7 @@ Biometeorology, Under Review.</p>
 <p>Hossain, F., Hoque, B.A., Ahmed, T., Khanam, S., Biswas, N.K., Akanda, A.S., Khan, M.S.K.,
 and Katagami, M. 2021. Impact Evaluation of an Operational Satellite-based Integrated Rice
 Advisory System in Northeastern Bangladesh, International Journal of Irrigation and Water
-Management. Vol. 8. Accepted. Dec 2021.</p>
+Management. Vol. 8. Accepted. Dec 2021. <a href='http://internationalscholarsjournals.org/download.php?id=125562855506508278.PDF&type=application/pdf&op=1' target='_blank'>https://doi.org/10.46882/IJIWM/1157</a></p>
 
 <p>Aziz, S., Pakhtigian, E.L., Akanda, A.S., Jutla, A., Huq, A., Alam, M., Ashan, G.U. and Colwell,
 R.R., 2021. Does improved risk information increase the value of cholera prevention? An
